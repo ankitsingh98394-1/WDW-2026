@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background-color: #b30000;
+            color: #ffffff;
+            text-align: center;
+            padding: 24px;
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 6px;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #222222;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: #ffffff;
+            padding: 14px 22px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #444444;
+        }
+
+        /* Content Container */
+        .container {
+            max-width: 900px;
+            margin: 24px auto;
+            padding: 0 16px;
+        }
+
+        .card {
+            background: #ffffff;
+            padding: 20px;
+            margin-bottom: 24px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+        }
+
+        .card h2 {
+            color: #b30000;
+            margin-bottom: 12px;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 6px;
+        }
+
+        /* Media Elements */
+        img, iframe, video {
+            width: 100%;
+            border-radius: 6px;
+            margin-top: 10px;
+        }
+
+        iframe {
+            height: 420px;
+            border: none;
+        }
+
+        audio {
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 16px;
+            background-color: #222222;
+            color: #ffffff;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Daily Chronicle</h1>
+        <p>Your Trusted Source for Breaking News and In-Depth Reports</p>
+    </header>
+
+    <!-- Navigation Menu (<nav> and <a> tags) -->
+    <nav>
+        <a href="#top-story">Top Story</a>
+        <a href="#video-report">Video News</a>
+        <a href="#multimedia">Multimedia</a>
+        <a href="https://www.bbc.com" target="_blank">External: BBC News</a>
+    </nav>
+
+    <div class="container">
+
+        <!-- News Article with Image -->
+        <section class="card" id="top-story">
+            <h2>Headline: Tech Advancements Reshaping the Web</h2>
+            <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=900" alt="News Desk Image">
+            <p style="margin-top: 12px;">
+                Modern web standards are evolving rapidly, enabling richer multimedia integration directly inside standard browsers without relying on external plugins.
+            </p>
+        </section>
+
+        <!-- Embedded YouTube Video (<iframe> tag) -->
+        <section class="card" id="video-report">
+            <h2>Live Broadcast (Embedded YouTube Stream)</h2>
+            <p>Watch the latest news recap below:</p>
+            <iframe 
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                title="YouTube video player" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </section>
+
+        <!-- Multimedia Section (Audio and Local Video tags) -->
+        <section class="card" id="multimedia">
+            <h2>Daily News Podcast (Audio)</h2>
+            <p>Listen to today's news bulletin:</p>
+            <audio controls>
+                <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <h2 style="margin-top: 24px;">Field Report (HTML5 Video)</h2>
+            <p>Direct footage from the event:</p>
+            <video controls>
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Daily Chronicle. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
